@@ -1,134 +1,48 @@
 # Ex.No.4 – Scenario-Based Report Development Utilizing Diverse Prompting Techniques
 
-## DATE:
+## Reg no: 212222060067
 
 ---
-
 ## Aim:
 
 To design an **AI-powered chatbot** that assists customers in resolving issues related to **product troubleshooting, order tracking, and general inquiries**. The chatbot should handle customer queries efficiently while maintaining a conversational and user-friendly tone.
 
-In this experiment (Case Study 2), we will employ **different prompting techniques** — Comparative Analysis Prompt, Universal Prompt, Structured Prompt Refinements, and Prompt Size Limitations — to design a report for a selected **Unit 5 use case**, using **Unit 2 prompt types**.
+In this experiment (Case Study 2), we will employ **different prompting techniques** — Comparative Analysis Prompt, Universal Prompt, Structured Prompt Refinements, and Prompt Size Limitations — to design a report for a selected **Unit 5 use case**, using **Unit 2 prompt types**.Experiment Design: Scenario-Based Report Development Using Diverse Prompting Techniques
+## 🎯 Objective:
 
----
 
-## Explanation:
+## 1. Define the Use Case / Scenario Theme
 
-### Scenario:
+Choose a consistent theme across all prompts. For this experiment:
 
-The **manufacturing industry** is seeking ways to reduce manual monitoring and increase efficiency through automation. The system integrates **IoT devices** and **embedded controllers** to automate equipment, monitor performance, and enable predictive maintenance.
+## Theme: Cybersecurity Breach in a Financial Institution
 
-### Target Audience:
+## 2. Prepare the Prompting Techniques
+Technique	Prompt Template
+Zero-shot	“Write a report on a cybersecurity breach in a financial institution.”
+One-shot	Provide one example report, then prompt: “Now generate a similar report for a different cyberattack at a bank.”
+Few-shot	Provide 2–3 examples with slightly varying scenarios, then prompt a new one.
+Chain-of-Thought	“Think through the attack vector, detection, response, and aftermath. Then write a report.”
+Role-based	“As a Chief Information Security Officer (CISO), write a detailed incident report.”
+Instructional	“Write a formal report in five sections: Executive Summary, Incident Details, Response Actions, Impact, Recommendations.”
+Reflective	After initial output: “Revise this report to improve clarity and add stakeholder impact.”
 
-* Manufacturing companies in **automotive, electronics, and food processing** sectors.
-* Industries that can achieve significant productivity improvements via automation.
+<img width="425" height="236" alt="image" src="https://github.com/user-attachments/assets/c2b2b3a3-e856-4587-bfe3-ad6dae0730d0" />
 
-### Main Objectives:
 
-* Improve production efficiency by **30%**.
-* Minimize machinery downtime using **predictive maintenance**.
-* Enable **real-time monitoring** and **remote control** of manufacturing systems.
-* Reduce **energy consumption** by optimizing processes.
+## Results
+Improved Accuracy: Few-shot and retrieval-augmented prompting significantly enhanced the accuracy of AI-generated reports by providing context and up-to-date information.
+Enhanced Reasoning: Chain-of-thought and tree of thoughts prompting enabled the AI to perform multi-step reasoning, resulting in more coherent and logically sound outputs.
+Faster Responses: Zero-shot prompting allowed for quick generation of responses in scenarios requiring immediate insights without extensive setup.
+Increased Robustness: Self-consistency prompting reduced answer variability by aggregating multiple reasoning paths, improving reliability.
+Better Explainability: Visualizing reasoning steps through diagrams and trees helped users understand AI decision-making processes, increasing trust in the generated reports.
 
----
+<img width="311" height="162" alt="image" src="https://github.com/user-attachments/assets/0e5649e0-7243-4bb8-989a-5b2c6469657b" />
 
-## Procedure:
-
-### 1. Idea Generation Prompts
-
-* **Prompt:**
-
-  > “What features can be incorporated into the automation system to optimize production and reduce downtime?”
-
-* **Generated Ideas:**
-
-  * Sensors for **real-time monitoring** of equipment performance.
-  * **Predictive maintenance alerts** to anticipate equipment failures.
-  * **Energy usage optimization** via automated switching based on demand.
-  * **Cloud-based dashboards** for remote monitoring and control.
-
----
-
-### 2. Persona and Context Prompts
-
-* **Prompt:**
-
-  > “What should the user interface and control system convey to the operators and managers?”
-
-* **Generated Context:**
-
-  * UI should be **intuitive**, displaying machine performance, energy usage, and alerts.
-  * System should convey **reliability** and **ease of use**, requiring minimal training.
-
----
-
-### 3. Comparative Analysis Prompt
-
-* **Prompt:**
-
-  > “Compare traditional manual monitoring with the IoT-enabled automated system in terms of efficiency, downtime, and energy usage.”
-
-* **Generated Analysis:**
-
-  * **Traditional Monitoring:** Labor-intensive, prone to errors, frequent downtime, delayed response.
-  * **IoT Automation:** **30% efficiency increase**, predictive maintenance reduces downtime, optimized energy management, improved accuracy and scalability.
-
----
-
-### 4. Universal Prompt
-
-* **Prompt:**
-
-  > “Generate a universal system description for an IoT-enabled manufacturing automation platform suitable for all industries.”
-
-* **Generated Output:**
-
-  * A **scalable, cloud-integrated IoT automation platform** with real-time monitoring, predictive analytics, energy optimization, and user-friendly dashboards adaptable across multiple industries.
-
----
-
-### 5. Structured Prompt Refinements
-
-* **Prompt:**
-
-  > “Refine the system description into structured sections: Objectives, Features, Benefits.”
-
-* **Generated Output:**
-
-  * **Objectives:** Increase efficiency, minimize downtime, optimize energy.
-  * **Features:** IoT sensors, predictive alerts, dashboards, automation controllers.
-  * **Benefits:** 30% productivity boost, cost reduction, sustainable energy use, higher reliability.
-
----
-
-### 6. Prompt Size Limitations
-
-* **Prompt:**
-
-  > “Summarize the entire automation system in less than 40 words.”
-
-* **Generated Summary:**
-
-  * “A cloud-based IoT automation platform enabling real-time monitoring, predictive maintenance, and energy optimization to improve efficiency, reduce downtime, and enhance productivity across industries.”
-
----
-
-## Tabular Summary
-
-| **Prompt Type**         | **Objective**                      | **Prompt Example**                                              | **Generated Output**                                                                                     |
-| ----------------------- | ---------------------------------- | --------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| Idea Generation         | Generate system features           | “What features can be incorporated into the automation system?” | Real-time sensors, predictive maintenance, energy optimization, cloud dashboards                         |
-| Persona & Context       | Define UI and operator interaction | “What should the user interface convey to operators/managers?”  | Intuitive UI, real-time data, reliability, ease of use                                                   |
-| Comparative Analysis    | Compare old vs new systems         | “Compare manual monitoring vs IoT-enabled automation.”          | IoT: higher efficiency, predictive alerts, optimized energy vs Manual: costly, error-prone, downtime     |
-| Universal Prompt        | General system design              | “Generate a universal IoT automation platform description.”     | Scalable IoT platform with monitoring, analytics, dashboards, energy optimization                        |
-| Structured Refinements  | Organize into sections             | “Refine into Objectives, Features, Benefits.”                   | Objectives: efficiency, downtime, energy. Features: IoT, dashboards. Benefits: productivity, cost saving |
-| Prompt Size Limitations | Concise summary                    | “Summarize in <40 words.”                                       | Cloud-based IoT platform with real-time monitoring, predictive maintenance, energy optimization.         |
-
----
-
-## Result:
-
-Thus, the prompts were executed successfully.
-
----
+## Conclusions
+Utilizing diverse prompting techniques tailored to specific scenarios leads to higher quality, more relevant, and reliable AI-generated reports.
+Combining methods such as retrieval-augmented prompting with chain-of-thought reasoning leverages the strengths of each approach, addressing both factual accuracy and logical coherence.
+Scenario-based prompting frameworks enable flexible adaptation to different report requirements, from quick summaries to complex analytical tasks.
+Incorporating visual aids to represent AI reasoning enhances transparency and user confidence in AI-assisted report development.
+Future work should explore automated selection and hybridization of prompting techniques to further optimize report generation workflows.
 
